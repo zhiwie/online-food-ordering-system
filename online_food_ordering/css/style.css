@@ -1,0 +1,485 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+
+}
+.container {
+  width: 1270px;
+  max-width: 94%; /* Ensure content doesn't exceed viewport width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container */
+}
+
+#menu-btn {
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--white);
+  display: none;
+}
+
+/* index.php file */
+.display_message {
+  background-color: var(--color2);
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.display_message span {
+  font-size: 1.5rem;
+}
+.display_message i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.display_message i:hover {
+  color: var(--red);
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 1.5rem 0 2rem;
+  color: var(--color1);
+}
+section {
+  padding: 2rem;
+}
+
+
+/* add products form */
+.add_product,
+.update_product {
+  max-width: 600rem;
+  background-color: var(--color2);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.add_product .input_fields,
+.update_product .input_fields {
+
+  padding: 1rem 1.2rem;
+  font-size: 1.6rem;
+  color: var(--black);
+  background-color: var(--white);
+  margin: 1.5rem 0;
+  width: 100%;
+}
+
+/* submit button */
+.submit_btn,
+.edit_btn,
+.cancel_btn {
+  display: block;
+  width: 50%;
+  text-align: center;
+  background-color: var(--color1);
+  color: var(--white);
+  font-size: 1.7rem;
+  padding: 1.2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin: 0 auto;
+}
+.cancel_btn {
+  background-color: var(--red);
+  margin: 2rem auto;
+}
+.submit_btn:hover {
+  color: var(--color3);
+}
+
+/* view_products.php */
+.display_product table {
+  width: 100%;
+  text-align: center;
+}
+.display_product table thead th {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  background-color: var(--color2);
+  color: var(--white);
+}
+td {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: var(--color1);
+  border: 1rem solid var(--white);
+  text-transform: uppercase;
+}
+.empty_text {
+  background-color: var(--color2);
+  padding: 2.5rem 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.delete_product_btn,
+.update_product_btn {
+  text-align: center;
+  color: var(--red);
+  font-size: 1.7rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+.update_product_btn {
+  color: var(--color2);
+}
+.product_container_box {
+  text-align: center;
+  height: 70%;
+}
+
+img {
+  width: 20%;
+  margin: 0 auto;
+}
+
+/* shop_product.php file styles */
+.cart_btn {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* cart.php */
+.shopping_cart table {
+  text-align: center;
+  width: 100%;
+}
+.shopping_cart table thead th {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  background-color: var(--color2);
+}
+.table_bottom {
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin: 1rem 0 3rem 0;
+}
+.bottom_btn {
+  color: var(--black);
+  font-size: 1.3rem;
+  background-color: var(--color4);
+  padding: 1rem;
+}
+.bottom_btn span {
+  color: green;
+}
+
+.delete_all_btn {
+  background-color: var(--color1);
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 1.5rem;
+}
+.delete_all_btn .fa-trash {
+  color: var(--red);
+  margin-right: 0.5rem;
+}
+.quantity_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quantity_box input {
+  width: 40%;
+  padding: 0.5rem;
+}
+.update_quantity {
+  color: var(--white);
+  padding: 0.5rem;
+  background-color: var(--color1);
+  margin: 1rem 0;
+}
+/* media queries */
+
+@media (max-width: 1200rem) {
+  .shopping_cart {
+    overflow-x: scroll;
+  }
+
+  .shopping_cart table {
+    width: 120rem;
+  }
+
+  .shopping_cart .heading {
+    text-align: left;
+  }
+
+  .shopping_cart .checkout-btn {
+    text-align: left;
+  }
+}
+
+/* tisham */
+.navbar ul {
+  list-style-type: none;
+  background-color: brown;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  float: left;
+  font-size: 25px;
+  margin-right: 150px; /* Adjust the value as needed */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 15px;
+}
+
+.navbar a:hover {
+  background-color: pink;
+}
+/* afra */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('images/img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.wrapper {
+  width: 420rem;
+  background: transparent;
+  border: 2rem solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20rem);
+  box-shadow: 0 0 10rem rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 10rem;
+  padding: 30rem 40rem;
+}
+
+
+.wrapper h1 {
+  font-size: 36rem;
+  text-align: center;
+}
+
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  margin: 30rem 0;
+}
+
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2rem solid rgba(255, 255, 255, .2);
+  border-radius: 40rem;
+  font-size: 16rem;
+  color: #fff;
+  padding: 20rem 45rem 20rem 20rem;
+}
+
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+
+.input-box i {
+  position: absolute;
+  right: 20rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20rem;
+}
+
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5rem;
+  margin: -15rem 0 15rem;
+}
+
+
+.remember-forgot label input {
+  caret-color: #fff;
+  margin-right: 3rem;
+}
+
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+
+.wrapper .btn {
+  width: 100%;
+  height: 45rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40rem;
+  box-shadow: 0 0 10rem rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16rem;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.wrapper .register-link {
+  font-size: 14.5rem;
+  text-align: center;
+  margin: 20rem 0 15rem;
+}
+
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+
+/* footer.php */
+.payment-options-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.payment-options-list li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 10px; /* Add spacing between list items */
+}
+
+.payment-options-list li img {
+  width: 50px; /* Set the width of the payment option images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+footer {
+  background: url(../images/pattern.png) center repeat;
+  padding: 90px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.payment-options ul li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+footer h5 {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-bottom: 15px;
+}
+
+.footer-logo-block img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+footer p,
+footer,
+footer span {
+  font-weight: 300;
+  color: #9c9da5;
+}
+
+.address h5 a {
+  color: #5c4ac7;
+  font-size: 26px;
+  font-family: "Give You Glory", cursive;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.address h5 a:hover {
+  color: #fff;
+}
+
+.popular-locations ul li {
+  display: inline-block;
+  width: 49%;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+footer ul li a {
+  color: #9c9da5;
+  transition: all 0.3s;
+}
+
+.how-it-works-links {
+  margin-bottom: 70px;
+}
+
+.address p {
+  margin-bottom: 35px;
+}
+
+footer ul li a:hover {
+  color: #5c4ac7;
+}
+
+footer li a {
+  line-height: 20px;
+  display: inline-block;
+}
+
+.payment-options ul {
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .footer-logo-block {
+    margin-bottom: 25px;
+  }
+}
